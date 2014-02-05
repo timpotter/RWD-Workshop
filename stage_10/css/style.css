@@ -1,0 +1,281 @@
+/* TYPOGRAPHY */
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-size: 100%;
+	font-family: 'Open Sans', arial, helvetica sans-serif;
+	color: #767E9E;
+}
+
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+}
+
+#page {
+  font-size: 1em;
+  /* equivalent to 16px */
+  line-height: 1.25;
+  /* equivalent to 20px */
+}
+
+@media (min-width: 43.75em) {
+  #page {
+    font-size: 1em;
+    /* equivalent to 16px */
+    line-height: 1.375;
+    /* equivalent to 22px */
+  }
+}
+
+h1 {
+  font-size: 2em;
+  /* 2x body copy size = 32px */
+  line-height: 1.25;
+  /* 45px / 36px */
+}
+
+@media (min-width: 43.75em) {
+  h1 {
+    font-size: 2.5em;
+    /* 2.5x body copy size = 40px */
+    line-height: 1.125;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h1 {
+    font-size: 3em;
+    /* 3x body copy size = 48px */
+    line-height: 1.05;
+    /* keep to a multiple of the 20px line height and something more appropriate for display headings */
+  }
+}
+
+h2 {
+  font-size: 1.625em;
+  /* 1.625x body copy size = 26px */
+  line-height: 1.15384615;
+  /* 30px / 26px */
+}
+
+@media (min-width: 43.75em) {
+  h2 {
+    font-size: 2em;
+    /* 2x body copy size = 32px */
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h2 {
+    font-size: 2.25em;
+    /* 2.25x body copy size = 36px */
+    line-height: 1.25;
+  }
+}
+
+h3 {
+  font-size: 1.375em;
+  /* 1.375x body copy size = 22px */
+  line-height: 1.13636364;
+  /* 25px / 22px */
+}
+
+@media (min-width: 43.75em) {
+  h3 {
+    font-size: 1.5em;
+    /* 1.5x body copy size = 24px */
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h3 {
+    font-size: 1.75em;
+    /* 1.75x body copy size = 28px */
+    line-height: 1.25;
+  }
+}
+
+h4 {
+  font-size: 1.125em;
+  /* 1.125x body copy size = 18px */
+  line-height: 1.11111111;
+}
+
+@media (min-width: 43.75em) {
+  h4 {
+    line-height: 1.22222222;
+    /* (22px / 18px */
+  }
+}
+
+blockquote {
+  font-size: 1.25em;
+  /* 20px / 16px */
+  line-height: 1.25;
+  /* 25px / 20px */
+}
+
+@media (min-width: 43.75em) {
+  blockquote {
+    font-size: 1.5em;
+    /* 24px / 16px = */
+    line-height: 1.45833333;
+    /* 35px / 24px */
+  }
+}
+
+/* LAYOUT */
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* HEADER */
+
+header {
+	background: #303341;
+	width: 100%;
+	height: 90px;
+	border-bottom: 3px solid #EB5055;
+}
+
+nav ul {
+	list-style: none;
+	float: right;
+	margin-top: 40px;
+}
+
+nav ul li {
+    display:inline-block;
+    padding:0 12px;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+nav ul li a:hover {
+	color: #EB5055;
+}
+
+.tinynav { 
+  display: none 
+}
+
+.logo {
+	margin-top: 25px;
+	float: left;
+  font-size: 2.250em; /* 36px */
+  color: white;
+  font-weight: 100;
+}
+
+.logo span {
+  color: #EB5055;
+}
+
+/* HERO */
+
+.hero {
+	background: #242832 url('../images/hero.jpg') no-repeat center;
+	max-height: 600px;
+	padding: 240px 0;
+}
+
+.hero h2 {
+	/*padding-top: 300px;*/
+	font-weight: bold;
+	font-style: italic;
+	font-size: 3.750em; /* 60px */
+	color: white;
+	padding: 2%;
+	background: rgba(48, 52, 65, .7);
+}
+
+/* INTRO */
+
+.intro {
+	margin: 40px 0;
+}
+
+.intro p {
+	font-size: 2.250em; /* 36px */
+	font-weight: 100;
+}
+
+/*PHOTO GALLERY */
+
+.photo-gallery {
+	display: block;
+	margin: 30px 0;
+}
+
+.photo-gallery h3 {
+	font-weight: bold;
+	font-size: 1.500em; /* 24px */
+}
+
+.img-item {
+	width: 25%;
+	padding: 5px;
+	float: left;
+	margin: 30px 0;
+}
+
+.img-item p {
+	line-height: 23px;
+	margin: 20px 0;
+	font-size: 0.750em;
+}
+
+/* FOOTER */
+
+footer {
+	background: #303341;
+	width: 100%;
+	min-height: 235px;
+	border-top: 3px solid #EB5055;
+	padding: 40px 0;
+}
+
+.footer-item {
+	float: left;
+	width: 33%;
+  padding: 5px;
+}
+
+.footer-item h4 {
+	font-weight: bold;
+	font-size: 1.125em; /* 18px */
+}
+
+.footer-item p {
+	line-height: 23px;
+	margin: 15px 0;
+	font-size: 0.750em;
+}
+
+
+
+/* CLEARFIX */
+
+.group:after {
+	content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+

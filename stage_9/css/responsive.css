@@ -1,0 +1,143 @@
+/* RESPONSIVE STYLE SHEET
+------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* 
+
+How a Media Query is constructed:
+
+@media 		= This rule specifies the target media types for example screen, print, projection etc.
+only 		= The keyword ‘only’ can also be used to hide style sheets from older browsers like IE6 (optional)
+screen 		= The type of media for which the stylesheet should target. Defining screen in this instance means it is intended primarily for color computer screens. For more info see - http://www.w3.org/TR/CSS21/media.html#media-types.
+and 		= A keyword to chain multiple queries together.
+min-width 	= The minimum width of the browser window
+max-width 	= The maximum width of the browser window
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {...} translates as if the media type is screen and the browser window has a minimum width of 768px and a maximum width of 1024px then serve this CSS, otherwise it will be ignored.
+
+Something to note - max-device-width is the width of the device's entire rendering area, i.e. the actual device screen rather than the browser window, so we haven't included it in our example. For more info on media queries visit - http://www.w3.org/TR/css3-mediaqueries/
+
+*/
+
+
+/* FOR A BREAKPOINT AT 1024PX
+------------------------------------------------------------------------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 1024px) {
+
+	.container {
+		width: 90%;
+	}
+
+	.hero h2 {
+		font-size: 3.438em; /* 55px */
+		width: 90%;
+		
+	}
+
+	.intro p {
+		font-size: 2.000em; /* 32px */
+	}
+
+}
+
+
+/* FOR A BREAKPOINT AT 768PX
+------------------------------------------------------------------------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 768px) {
+
+	.hero h2 {
+		font-size: 3.125em; /* 50px */
+	}
+
+	.intro p {
+		font-size: 1.625em; /* 26px */
+	}
+
+}
+
+/* FOR A BREAKPOINT AT 700PX
+------------------------------------------------------------------------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 700px) {
+
+	.img-item {
+		width: 50%;
+		margin: 15px 0 0;
+	}
+
+}
+
+
+/* FOR A BREAKPOINT AT 520PX
+------------------------------------------------------------------------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 520px) {
+
+	.footer-item {
+		width: 100%;
+	}
+}
+
+
+/* FOR A BREAKPOINT AT 480PX
+------------------------------------------------------------------------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 480px) {
+
+	.hero h2 {
+		font-size: 2.500em; /* 40px */
+	}
+
+	.intro p {
+		font-size: 1.500em; /* 24px */
+	}
+
+}
+
+/* FOR A BREAKPOINT AT 465PX
+------------------------------------------------------------------------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 465px) {
+
+	h1.logo {
+		margin: 0;
+		text-align: center;
+		float: none;
+	}
+
+	nav ul {
+		list-style: none;
+		float: none;
+		margin: 10px auto;
+		
+	}
+
+	nav ul li {
+		margin: 0 auto;
+		text-align: center;
+		width: 33.3%;
+		float: left;
+		display: block;
+		
+	}
+
+	.img-item {
+		width: 100%;
+	
+	}
+
+
+}
+
+
+/* FOR A SCREEN SIZE UP TO 320PX
+------------------------------------------------------------------------------------------------------------------------------------------ */
+
+@media only screen and (max-width: 320px) {
+
+	.hero h2 {
+		font-size: 2.188em; /* 35px */
+	}
+
+}

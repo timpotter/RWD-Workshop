@@ -1,0 +1,121 @@
+/* 
+
+There is a secret weapon in this code for making images responsive. Setting img to "max-width:100%" means the img element will render at whatever size it wants, as long as it’s narrower than its containing element. If it happens to be wider than its container, then the max-width: 100% directive forces the image’s width to match the width of its container. No more images spilling out of their containing element!
+
+*/
+
+/* LAYOUT */
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	}
+
+
+/* HEADER */
+
+header {
+	background: #303341;
+	width: 100%;
+	height: 90px;
+	border-bottom: 5px solid #EB5055;
+}
+
+h1.logo {
+	margin-top: 25px;
+	float: left;
+  	color: white;
+  	font-weight: 100;
+}
+
+h1.logo span {
+  color: #EB5055;
+}
+
+/* NAVIGATION */
+
+nav ul {
+	float: right;
+	margin-top: 45px;
+}
+
+nav ul li {
+    display:inline-block;
+    padding:0 15px;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+nav ul li a:hover {
+	color: #EB5055;
+}
+
+
+/* HERO */
+
+.hero {
+	background: #242832 url('../images/hero.jpg') no-repeat center;
+	height: 60%; /* a little bit of vertical responsive work going on here */
+	width: 100%;
+	display: table; /* Remember tables from the "bad old days" of coding? Well we can force an element to behave like one. This makes it easy to vertically align content */
+}
+
+.hero .container {
+	display: table-cell; /* We've set the containing element as a table and now we've set this element to display as a table-cell inside it. */
+	vertical-align: middle; /* Now it's as simple as this declaring the vertical alignment as middle */
+}
+
+.hero h2 {
+	font-style: italic;
+	color: white;
+	padding: 0.5em; /* 8px */
+	font-size: 3.75em; /* 60px */
+	background: rgba(48, 52, 65, 0.7);
+	width: 900px; /* We have to reset a width on this tagline and center it */
+	margin: 0 auto;
+}
+
+/* INTRO */
+
+.intro {
+	margin: 40px 0;
+}
+
+.intro p {
+	font-size: 2.250em; /* 36px */
+	font-weight: 100;
+}
+
+/*PHOTO GALLERY */
+
+.photo-gallery {
+	display: block;
+	margin: 30px 0;
+}
+
+.photo-gallery h3 {
+	font-size: 1.500em; /* 24px */
+}
+
+.img-item {
+	width: 25%;
+	padding: 5px;
+	float: left;
+	margin: 30px 0;
+}
+
+.img-item p {
+	margin: 20px 0;
+	line-height: 1.5em;
+	font-size: 0.750em; /* 12px */
+}
+
+img {
+	max-width: 100%; 
+}
+
+

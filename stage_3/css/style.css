@@ -1,0 +1,57 @@
+/* 
+
+To work out the font-size of our type, we can use simple a calculation to make 'em' relative to 'px' which many find easier to read.
+
+The base font-size of browsers is typically set at 16px which relates to 1em. If we make the base font-size 10px equal to 1em, our calculations will be straight forward e.g 36px = 3.6em.
+
+We can do this with the following calculation:
+
+10px (desired base font-size) divided by 16px (default base font-size) multiplied by 100 = 62.5%. Now with this value we can set the font-size in the body to 62.5%.
+
+Now they way that has just been described is pretty solid, but lets now look at implementing a modern scale for typography.
+
+*/
+
+/* TYPOGRAPHY */
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-size: 65.5%; /* 10 / 16 X 100 = 62.5% */ 
+	font-family: arial, helvetica, sans-serif;
+	color: #767E9E;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 1em 0 0.5em;
+}
+
+h1 {
+	font-size: 3.6em;
+}
+
+h2 {
+	font-size: 2.4em;
+}
+
+h3 {
+	font-size: 1.8em;
+}
+
+h4 {
+	font-size: 1.6em;
+}
+
+p {
+	font-size: 1.6em;
+	line-height: 1.5em;
+	margin-bottom: 1em;
+}
+
+img, nav {
+	display: none; /* Hides the imagery and navigation temporarily so you can get a better feel of the typography. Delete this style when happy! */
+	}
+
+
