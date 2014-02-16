@@ -103,9 +103,17 @@ Something to note - max-device-width is the width of the device's entire renderi
 		display: none;
 	}
 
-
 }
 
+/* FOR A BREAKPOINT AT 465PX
+------------------------------------------------------------------------------------------------------------------------------------------ */
+@media only screen and (max-width: 465px) {
+
+	.img-item {
+		width: 100%;
+	}
+
+}
 
 /* FOR A SCREEN SIZE UP TO 320PX
 ------------------------------------------------------------------------------------------------------------------------------------------ */
